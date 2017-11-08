@@ -15,6 +15,7 @@
 		97BE52981FB2DDE9004118D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE52971FB2DDE9004118D2 /* main.m */; };
 		97BE52A21FB2DDE9004118D2 /* UserInfoManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE52A11FB2DDE9004118D2 /* UserInfoManagerTests.m */; };
 		97BE52AD1FB2DDE9004118D2 /* UserInfoManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE52AC1FB2DDE9004118D2 /* UserInfoManagerUITests.m */; };
+		97BE52BF1FB2DE2F004118D2 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE52BE1FB2DE2F004118D2 /* UserInfoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		97BE52A81FB2DDE9004118D2 /* UserInfoManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserInfoManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BE52AC1FB2DDE9004118D2 /* UserInfoManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoManagerUITests.m; sourceTree = "<group>"; };
 		97BE52AE1FB2DDE9004118D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BE52BD1FB2DE2F004118D2 /* UserInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
+		97BE52BE1FB2DE2F004118D2 /* UserInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
+		97BE52C01FB2E2B4004118D2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				97BE52891FB2DDE9004118D2 /* AppDelegate.m */,
 				97BE528B1FB2DDE9004118D2 /* ViewController.h */,
 				97BE528C1FB2DDE9004118D2 /* ViewController.m */,
+				97BE52BD1FB2DE2F004118D2 /* UserInfoManager.h */,
+				97BE52BE1FB2DE2F004118D2 /* UserInfoManager.m */,
 				97BE528E1FB2DDE9004118D2 /* Main.storyboard */,
 				97BE52911FB2DDE9004118D2 /* Assets.xcassets */,
 				97BE52931FB2DDE9004118D2 /* LaunchScreen.storyboard */,
@@ -119,6 +125,7 @@
 			children = (
 				97BE52A11FB2DDE9004118D2 /* UserInfoManagerTests.m */,
 				97BE52A31FB2DDE9004118D2 /* Info.plist */,
+				97BE52C01FB2E2B4004118D2 /* PrefixHeader.pch */,
 			);
 			path = UserInfoManagerTests;
 			sourceTree = "<group>";
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE52BF1FB2DE2F004118D2 /* UserInfoManager.m in Sources */,
 				97BE528D1FB2DDE9004118D2 /* ViewController.m in Sources */,
 				97BE52981FB2DDE9004118D2 /* main.m in Sources */,
 				97BE528A1FB2DDE9004118D2 /* AppDelegate.m in Sources */,
@@ -432,7 +440,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AV57XBXLJ;
+				GCC_PREFIX_HEADER = "/Users/tandepeng/Desktop/未命名文件夹/UserInfoManager/UserInfoManagerTests/PrefixHeader.pch";
 				INFOPLIST_FILE = UserInfoManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tan.baseframework.UserInfoManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,7 +456,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AV57XBXLJ;
+				GCC_PREFIX_HEADER = "/Users/tandepeng/Desktop/未命名文件夹/UserInfoManager/UserInfoManagerTests/PrefixHeader.pch";
 				INFOPLIST_FILE = UserInfoManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tan.baseframework.UserInfoManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
